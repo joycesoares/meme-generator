@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MEME GENERATOR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>MEME GENERATOR</p>
+        <div class="top-box">
+            <textarea id="text-top" placeholder="Text appear on top"></textarea>
+            <span>Change text Size:</span><input type="range" id="top-text-size" min="0.05" max="0.25" value="0.15" step="0.01">
+        </div>
+        <div class="bottom-box">
+            <textarea id="text-bottom" placeholder="Text appear on bottom"></textarea>
+            <span>Change text Size:</span><input type="range" id="bottom-text-size" min="0.05" max="0.25" value="0.15" step="0.01">
+        </div>
+        <div class="btn-select-file">
+            <input type="file" id="image-load" accept="image/*">
+        </div>
+        <div class="msg-alert">
+            <p id="msg-alert" class="msg-alert"></p>
+        </div>
+        <div class="btn-generate">
+            <button type="submit" id="btn-generate">Send Image</button>
+        </div>
+        <div class="canva-generate">
+            <canvas id="meme-finish"></canvas>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

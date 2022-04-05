@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container p{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container .top-box, .container .bottom-box, 
+.btn-generate,
+.msg-alert,
+.btn-select-file{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.container .top-box textarea, .container .bottom-box textarea{
+    width: 280px;
+    height: 90px;
+    border: 1px solid rgb(126, 126, 185);
+    border-radius: 5px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+    padding: 30px;
+}
+
+textarea:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #5088c9;
+}
+
+.container .top-box span, .container .bottom-box span{
+    font-size: 14px;
+    margin: 10px;
+}
+.msg-alert p{
+    color: red;
+    opacity: 1;
+    margin: 0px !important;
+    transition: opacity 500ms;
+}
+.hidden {
+    display: none;
+  }
+.btn-generate button{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(191, 250, 191);
+    background-color: #fff;
+    font: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#meme-finish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+
+}
